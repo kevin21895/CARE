@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.example.kevin.care",
+    "sha256_cert_fingerprints":
+    ["01:A4:D6:1A:EA:A0:94:EC:22:39:9C:90:70:D6:46:C7:F2:7A:7E:2F:EA:49:C0:B6:49:F7:9A:B5:8D:C2:FA:7B"]
+  }
+}]

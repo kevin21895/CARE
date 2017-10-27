@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.example.kevin.care">
+
+<uses-feature android:glEsVersion="0x00020000" android:required="true" />
+
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+<uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+<uses-permission android:name="android.permission.READ_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+<application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name"
+    android:supportsRtl="true" android:theme="@style/AppTheme">
+    <meta-data android:name="asset_statements" android:resource="@string/asset_statements" />
+
+    <activity android:name=".MainActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity android:name=".Profile" android:label="@string/title_activity_profile" android:theme="@style/AppTheme.NoActionBar" />
+    <activity android:name=".Nexttest" android:label="Care" android:theme="@style/AppTheme.NoActionBar" />
+
+    <service android:name=".MyFirebaseMessagingService">
+        <intent-filter>
+            <action android:name="com.google.firebase.MESSAGING_EVENT" />
+        </intent-filter>
+    </service>
+    <service android:name=".MyFirebaseInstanceIdService">
+        <intent-filter>
+            <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+        </intent-filter>
+    </service>
+
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBjWXdFo_Mv22hkFTGz5z7Xn02RngTHO1o" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+
+    <activity android:name=".Retrieve" android:label="@string/title_activity_retrieve" android:theme="@style/AppTheme.NoActionBar" />
+    <activity android:name=".ChildList" />
+    <activity android:name=".RequestLocation" />
+    <activity android:name=".MapsActivity" />
+    <activity android:name=".Geofence1" android:label="@string/title_activity_geofence1"
+        android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+    <activity android:name="com.example.kevin.care.MapsActivity2" android:label="Care">
+        <intent-filter android:autoVerify="true">
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="http" android:host="maps.google.com" />
+            <data android:scheme="https" android:host="maps.google.com" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.SEND" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <data android:mimeType="text/plain" />
+        </intent-filter>
+
+
+
+    </activity>
+    <activity android:name="com.example.kevin.care.MapsActivity3" android:label="@string/title_activity_maps3">
+
+    </activity>
+
+
+    <service android:name=".GeofenceTransitionsIntentService" android:exported="true" />
+    <service android:name=".HelloService"></service>
+</application>
+
+
+</manifest>
+
+

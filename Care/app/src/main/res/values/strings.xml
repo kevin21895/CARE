@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">CARE</string>
+    <string name="Geofencing">CARE</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="forgot">Forgot Password</string>
+    <string name="remember">Remember Password</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="latitude_label">Latitude</string>
+    <string name="longitude_label">Longitude</string>
+    <string name="no_location_detected">
+        No location detected. Make sure location is enabled on the device.
+    </string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_maps1">Maps1</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_nexttest">Nexttest</string>
+    <string name="title_activity_retrieve_data">RetrieveData</string>
+    <string name="title_activity_retrieve">Retrieve</string>
+    <string name="title_activity_geofence1">Geofence1</string>
+    <string name="asset_statements" translatable="false">[{\n  \"relation\": [\"delegate_permission/common.handle_all_urls\"],\n  \"target\": {\n    \"namespace\": \"web\",\n    \"site\": \"http://maps.google.com\",\n  }\n}]</string>
+    <string name="title_activity_maps3">Map</string>
+</resources>
